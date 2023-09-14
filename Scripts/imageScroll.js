@@ -64,8 +64,6 @@ for(let i = 1; i <= 10; i++){
 }
 
 function ScrollImages() {
-  console.log("Scrolling Images");
-  
   $(".images").each(function () {
     $(this).css("left", parseInt($(this).css("left")) - 1);
     if(parseInt($(this).css("left")) < -300)
