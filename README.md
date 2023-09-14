@@ -4,6 +4,8 @@ This project is a redo of my old portfolio website I had made for my professiona
 
 It will be a true single page application using using HTML, CSS, Javascript, jquery, bootstrap, and AJAX
 
-I will eventualy have it up as granquistr.github.io.
+The wip version is up to date here:
 
-:>
+granquistr.github.io
+
+Cheers :>
