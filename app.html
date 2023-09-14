@@ -1,19 +1,17 @@
 <script>
+  //Routing
   $(document).ready(function () {
-    $(".header").load("/Components/Header.html");
+    $("#header").load("/Components/Header.html");
+    var location = window.location.href.split("?")[1];
+    if (location == "" || location == undefined) {
+      $("#content").load("/Views/Home.html");
+    } else {
+        $("#content").load("/Views/" + location + ".html");
+    }
   });
 </script>
-<div class="app">
-  <div class="header"></div>
-  WIP
+<div>
+  <div id="header"></div>
+  <div id="content"></div>
 </div>
-<style>
-  .app {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1c1c1d;
-  }
-</style>
+<style></style>

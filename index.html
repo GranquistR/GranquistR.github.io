@@ -16,8 +16,20 @@
     <div id="app"></div>
   </body>
 </html>
-<script>
+<script type="module">
   $(document).ready(function () {
     $("#app").load("app.html");
   });
 </script>
+<style>
+  /* default styles */
+  #app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1d;
+    color: white;
+  }
+</style>

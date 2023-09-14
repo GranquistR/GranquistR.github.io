@@ -1,4 +1,17 @@
-<script></script>
+<script>
+  //each button should append its name to the url as a param
+  //then the app should read the param and load the appropriate view
+  $(document).ready(function () {
+    $(".link").click(function () {
+      var location = $(this).text().toLowerCase().replace(/\s/g, "");
+      if (location == "home") {
+        window.location.href = "?";
+      } else {
+        window.location.href = "?" + location;
+      }
+    });
+  });
+</script>
 <div class="header">
   <!-- header bar -->
   <div class="row">
@@ -14,22 +27,20 @@
 </div>
 <style>
   .header {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: auto;
     background-color: #323232;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 40px;
+    padding-left: 20px;
     padding-right: 30px;
   }
 
   .header .title {
     font-size: 30px;
     font-weight: bold;
+    white-space: nowrap;
   }
 
   .header .link {
