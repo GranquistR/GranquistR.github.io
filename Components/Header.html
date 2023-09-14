@@ -14,10 +14,10 @@
 </script>
 <div class="header">
   <!-- header bar -->
-  <div class="row">
-    <div class="col">
+  <div class="row bar">
+    <div class="col-sm-x title">
       <div class="row">My Portfolio</div>
-      <div class="row title">Ryan Granquist</div>
+      <div class="row name">Ryan Granquist</div>
     </div>
     <div class="col link">Home</div>
     <div class="col link">Personal Projects</div>
@@ -31,16 +31,26 @@
     height: auto;
     background-color: #323232;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 30px;
+    padding:10px
+
   }
 
-  .header .title {
+  .header .title{
+    margin-right:40px;
+    margin-left:40px;
+  }
+
+  .header .name {
     font-size: 30px;
     font-weight: bold;
     white-space: nowrap;
+    
+  }
+
+  .header .bar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .header .link {
@@ -51,10 +61,10 @@
     padding: 5px;
     padding: 10px;
     margin: 5px;
-    height: 45px;
     cursor: pointer;
     white-space: nowrap;
     display: flex;
     justify-content: center;
+    height: fit-content;
   }
 </style>
