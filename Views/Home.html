@@ -1,5 +1,10 @@
 <script></script>
 <div class="home">
+  <div class="background">
+    <!-- nonsense code that looks cool -->
+    console.log("Hello,&nbspWorld!");&nbspif(result.status)const&nbspdata&nbsp=&nbspformat(result.data);console.debug("data:"&nbspdata);return&nbspdata;else&nbspreturn&nbspformat(result.data)
+  </div>
+  <div class="spacer"></div>
   <div class="landing">
     <code>Hello, World!</code>
     <h1>I am Ryan Granquist</h1>
@@ -8,56 +13,63 @@
       page and view what I have been up to.
     </p>
   </div>
-
+  <div class="spacer"></div>
   <div class="imageSlideshowContainer">
     <script src="/Scripts/imageScroll.js"></script>
     <script>
       BeginScroll();
     </script>
-    <div id="imageScroll"></div>
-  </div>
-  <div class="background">
-    <!-- nonsense code that looks cool -->
-    console.log("Hello,&nbspWorld!");&nbspif(result.status)const&nbspdata&nbsp=&nbspformat(result.data);console.debug("data:"&nbspdata);return&nbspdata;else&nbspreturn&nbspformat(result.data)
+    <div id="imageScroll"> Images may have failed to load. Reload the page or try again later. </div>
   </div>
 </div>
 
 <style>
+  
+  .home .spacer {
+    height: 200px;
+  }
   .home .images {
     position: absolute;
   }
   .home .imageSlideshowContainer {
-    position: absolute;
+    position: relative;
     top: 85%;
-    width: 100%;
     height: 400px;
     background-color: #161b22;
     z-index: 1;
-    display: flex;
-    overflow: hidden;
+    overflow:hidden;
+    width: 100%;
   }
+.home .imageScroll{
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
   .home .landing {
-    position: absolute;
-    top: 50%;
-    translate: 0 -50%;
+    position: relative;
     max-width: 600px;
     margin-left: 5vh;
-    z-index: 1;
-  }
-  .home code {
-    font-size: 20pt;
+    z-index: 110;
   }
   .home .subtext {
     color: gray;
     font-size: 12pt;
   }
   .home .background {
+    line-height: 130%;
+    top:100px;
     position: absolute;
     font-size: 100pt;
     word-wrap:break-word;
     overflow: hidden;
     max-width: 100%;
-    color: #1d1d1d;
+    color: #12171f;
     max-height: 100vh;
+    z-index: 0;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
   }
 </style>

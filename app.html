@@ -6,16 +6,15 @@
     if (location == "" || location == undefined) {
       $("#content").load("/Views/Home.html");
     } else {
-        $("#content").load("/Views/" + location + ".html");
+      $("#content").load("/Views/" + location + ".html");
     }
+    $("#footer").load("/Components/Footer.html");
   });
 </script>
 <!-- App body -->
 <div id="header"></div>
 <div id="content"></div>
+<div id="footer"></div>
 <!--  -->
 <style>
-  #content{
-    
-  }
 </style>
