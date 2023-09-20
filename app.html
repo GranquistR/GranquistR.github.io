@@ -1,14 +1,14 @@
 <script>
   //Routing
   $(document).ready(function () {
-    $("#header").load("/Components/Header.html");
+    $("#header").load("./Components/Header.html");
     var location = window.location.href.split("?")[1];
     if (location == "" || location == undefined) {
-      $("#content").load("/Views/Home.html");
+      $("#content").load("./Views/Home.html");
     } else {
-      $("#content").load("/Views/" + location + ".html");
+      $("#content").load("./Views/" + location + ".html");
     }
-    $("#footer").load("/Components/Footer.html");
+    $("#footer").load("./Components/Footer.html");
   });
 </script>
 <!-- App body -->
