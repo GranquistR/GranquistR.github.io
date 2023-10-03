@@ -4,7 +4,7 @@
     $("#header").load("./Components/Header.html");
     var location = window.location.href.split("?")[1];
     if (location == "" || location == undefined) {
-      $("#content").load("./Views/Home.html");
+      $("#content").load("./Views/home.html");
     } else {
       $("#content").load("./Views/" + location + ".html");
     }
