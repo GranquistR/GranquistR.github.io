@@ -1,7 +1,58 @@
+
+<script>
+  //
+</script>
+
 <div class="personalProjects">
-    <h2>
-        <code>Personal Projects</code>
-    </h2>
-    <h4>Tiny Blocks</h3>
-        Tiny Blocks is a game I made in Visual Studio using the C# windows form template. The game consists of a three-dimensional isometric grid of blocks where the player can create and destroy to their hearts desire. The game uses low density bitmaps and occlusion culling to limit the amount of drawing done on the screen which allows for large max grid sizes while keeping a smooth frame rate.
+  <h2>
+    <code>Personal Projects</code>
+  </h2>
+
+  <div class="flex">
+    <img src="Images/game1.png" width="50%" class="small"/>
+    <div class="text">
+      <h4>Tiny Blocks</h4>
+      Tiny Blocks is a game I made in Visual Studio using the C# windows form
+      template. The game consists of a three-dimensional isometric grid of blocks
+      where the player can create and destroy to their heart's desire. The game
+      uses low density bitmaps and occlusion culling to limit the amount of
+      drawing done on the screen which allows for large max grid sizes while
+      keeping a smooth frame rate. You control a cursor that can move in all 6
+      directions in 3D space, use the cursor to break or place the blocks of all
+      varieties at your cursors location.
     </div>
+  </div>
+  <div class="lineSpacer"></div>
+</div>
+<style>
+  .personalProjects .lineSpacer{
+    left:10px;
+    right:10px;
+    margin:30px;
+    height: 1px;
+    background-color: rgb(74, 74, 74);;
+  }
+
+  .personalProjects {
+    padding: 10px;
+  }
+
+  .personalProjects img {
+    border: 1px solid white;
+    max-width: 416px;
+    min-width:360px;
+    margin:15px;
+  }
+
+  .personalProjects .text{
+    max-width: 500px;
+  }
+
+  .personalProjects .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
