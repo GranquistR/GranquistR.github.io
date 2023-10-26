@@ -1,4 +1,3 @@
-
 <script>
   //
 </script>
@@ -9,28 +8,43 @@
   </h2>
 
   <div class="flex">
-    <img src="Images/game1.png" width="50%" class="small"/>
+    <img src="Images/game1.png" width="50%" class="small" />
     <div class="text">
       <h4>Tiny Blocks</h4>
       Tiny Blocks is a game I made in Visual Studio using the C# windows form
-      template. The game consists of a three-dimensional isometric grid of blocks
-      where the player can create and destroy to their heart's desire. The game
-      uses low density bitmaps and occlusion culling to limit the amount of
-      drawing done on the screen which allows for large max grid sizes while
-      keeping a smooth frame rate. You control a cursor that can move in all 6
-      directions in 3D space, use the cursor to break or place the blocks of all
-      varieties at your cursors location.
+      template. The game consists of a three-dimensional isometric grid of
+      blocks where the player can create and destroy to their heart's desire.
+      The game uses low density bitmaps and occlusion culling to limit the
+      amount of drawing done on the screen which allows for large max grid sizes
+      while keeping a smooth frame rate. You control a cursor that can move in
+      all 6 directions in 3D space, use the cursor to break or place the blocks
+      of all varieties at your cursors location.
     </div>
   </div>
   <div class="lineSpacer"></div>
+  <div class="flex">
+    <img src="Images/website.png" width="50%" class="small" />
+    <div class="text">
+      <h4>This Website</h4>
+      My intent with this website, besides being an awesome portfolio, was to
+      have it serve as a hub to all future personal projects. This would entail
+      making the page as fast and expandable as possible. I achieved this by
+      making my own single page application design framework to work off of.
+      This means that the page is loaded once and then all future page loads are
+      done by javascript. This allows for a seamless transition between pages
+      and allows for the page to be loaded once and then never again. Aiding
+      this design is a vue-like component system that involves defining
+      components in their own .HTML file and loading them with javascript.
+    </div>
+  </div>
 </div>
 <style>
-  .personalProjects .lineSpacer{
-    left:10px;
-    right:10px;
-    margin:30px;
+  .personalProjects .lineSpacer {
+    left: 10px;
+    right: 10px;
+    margin: 30px;
     height: 1px;
-    background-color: rgb(74, 74, 74);;
+    background-color: rgb(74, 74, 74);
   }
 
   .personalProjects {
@@ -40,11 +54,11 @@
   .personalProjects img {
     border: 1px solid white;
     max-width: 416px;
-    min-width:360px;
-    margin:15px;
+    min-width: 360px;
+    margin: 15px;
   }
 
-  .personalProjects .text{
+  .personalProjects .text {
     max-width: 500px;
   }
 
