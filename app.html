@@ -10,7 +10,7 @@
       $("#content").load("./Views/home.html");
     } else {
       if (routes.includes(location) == false) {
-        $("#content").load("./Views/404.html");
+        $("#content").load("./Views/notfound.html");
       }
       $("#content").load("./Views/" + location + ".html");
     }
