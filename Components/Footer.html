@@ -1,7 +1,6 @@
 <script>
   function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    window.location.href = "?";
   }
   $(".toTop").click(function () {
     topFunction();
@@ -9,7 +8,7 @@
 </script>
 <div class="footer">
   <span class="left">Made by Ryan Granquist.</span>
-  <div class="right toTop">Back to top ^</div>
+  <div class="right toTop">Back to home</div>
 </div>
 <style>
   .footer {
@@ -19,6 +18,8 @@
     background-color: #161b22;
     z-index: 1;
     color: gray;
+    position: fixed;
+    bottom: 0;
   }
   .footer .right {
     float: right;
