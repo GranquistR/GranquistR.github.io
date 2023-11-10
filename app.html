@@ -5,15 +5,19 @@
   //Routing
   $(document).ready(function () {
     $("#header").load("./Components/Header.html");
-    var location = window.location.href.split("?")[1];
-    if (location == "" || location == undefined) {
-      $("#content").load("./Views/home.html");
-    } else {
-      if (routes.includes(location) == false) {
-        $("#content").load("./Views/notfound.html");
+    try {
+      var location = window.location.href.split("?")[1];
+      if (location == "" || location == undefined) {
+        $("#content").load("./Views/home.html");
       } else {
-        $("#content").load("./Views/" + location + ".html");
+        if (routes.includes(location) == false) {
+          $("#content").load("./Views/notfound.html");
+        } else {
+          $("#content").load("./Views/" + location + ".html");
+        }
       }
+    } catch {
+      $("#content").load("./Views/notfound.html");
     }
     $("#footer").load("./Components/Footer.html");
   });
