@@ -1,1 +1,110 @@
-Contact Me
+<div class="contactme">
+  <div class="flex">
+    <div class="container">
+      <h4>
+        <code>Contact Me</code>
+      </h4>
+      <div class="form">
+        Name
+        <input type="text" name="Name" />
+        Email
+        <input type="text" name="Email" />
+        Message
+        <textarea type="text" name="Message"></textarea>
+        <button>Send</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="links">
+        <h4>
+          <code>My Socials</code>
+        </h4>
+        Take a look and see what I've been up to!
+        <div class="lineSpacer"></div>
+        <div>
+          <img
+            src="/Icons/github-icon.png"
+            alt="Github Link"
+            width="50px"
+            class="icon"
+          />
+          Github
+        </div>
+        <div>
+          <img
+            src="/Icons/linkedin-icon.png"
+            alt="Linkedin Link"
+            width="50px"
+            class="icon"
+          />
+          LinkedIn
+        </div>
+        <div>
+          <img
+            src="/Icons/handshake-logo.png"
+            alt="HandShake Link"
+            width="50px"
+            class="icon"
+          />
+          HandShake
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .contactme button {
+    background-color: #2c333c;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    width: 200px;
+  }
+
+  .contactme textarea {
+    background-color: #2c333c;
+    border: none;
+  }
+  .contactme input {
+    background-color: #2c333c;
+    border: none;
+  }
+  .contactme .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactme .lineSpacer {
+    width: 400px;
+    height: 1px;
+    margin: 20px;
+    background-color: #2c333c;
+  }
+
+  .contactme .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactme .icon {
+    border-radius: 5px;
+    padding: 7px;
+  }
+
+  .contactme .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contactme .container {
+    margin: 10px;
+    background-color: red;
+    width: 500px;
+    background-color: #161b22;
+    border-radius: 5px;
+    padding: 10px;
+  }
+</style>

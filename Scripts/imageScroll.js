@@ -43,31 +43,29 @@ const images = {
 
 let intervalTimer;
 function BeginScroll() {
-  
-//insert images
-let previous;
-for(let i = 1; i <= 10; i++){
+  //insert images
+  let previous;
+  for (let i = 1; i <= 10; i++) {
     let img = document.createElement("img");
     img.src = images[i].source;
     img.alt = images[i].alt;
     img.style.height = "400px";
     img.style.width = "300px";
     img.classList.add("images");
-    img.style.left = (300 * (i-1)).toString() + "px";
-  
+    img.style.left = (300 * (i - 1)).toString() + "px";
+
     document.getElementById("imageScroll").appendChild(img);
     previous = img;
-}
+  }
 
-    // start scroll
+  // start scroll
   intervalTimer = setInterval(ScrollImages, 50);
 }
 
 function ScrollImages() {
   $(".images").each(function () {
     $(this).css("left", parseInt($(this).css("left")) - 1);
-    if(parseInt($(this).css("left")) < -300)
-    {
+    if (parseInt($(this).css("left")) < -300) {
       $(this).css("left", "2699px");
     }
   });
