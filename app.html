@@ -11,8 +11,9 @@
     } else {
       if (routes.includes(location) == false) {
         $("#content").load("./Views/notfound.html");
+      } else {
+        $("#content").load("./Views/" + location + ".html");
       }
-      $("#content").load("./Views/" + location + ".html");
     }
     $("#footer").load("./Components/Footer.html");
   });
