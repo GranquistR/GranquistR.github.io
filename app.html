@@ -1,4 +1,7 @@
 <script>
+  //routing options
+  var routes = ["home", "personalprojects", "about", "contact", "workhistory"];
+
   //Routing
   $(document).ready(function () {
     $("#header").load("./Components/Header.html");
@@ -6,7 +9,10 @@
     if (location == "" || location == undefined) {
       $("#content").load("./Views/home.html");
     } else {
-     $("#content").load("./Views/" + location + ".html");
+      if (routes.includes(location) == false) {
+        $("#content").load("./Views/404.html");
+      }
+      $("#content").load("./Views/" + location + ".html");
     }
     $("#footer").load("./Components/Footer.html");
   });
@@ -16,5 +22,4 @@
 <div id="content"></div>
 <div id="footer"></div>
 <!--  -->
-<style>
-</style>
+<style></style>

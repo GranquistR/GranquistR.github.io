@@ -1,0 +1,45 @@
+<div class="notfound flex">
+  <div class="left">
+    <code>404</code>
+    <div class="sub">Page not found!</div>
+    <div class="msg">Please contact me if you think this is an error</div>
+  </div>
+  <span>
+    <img src="Images/damnit.gif" alt="GAHHHH SHIITT" />
+  </span>
+</div>
+
+<style>
+  .notfound.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* vertically allight this div */
+    height: 80vh;
+  }
+  .notfound code {
+    margin: 10px;
+    font-size: 60pt;
+  }
+
+  .notfound .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .notfound .sub {
+    font-size: 30pt;
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
+
+  .notfound img {
+    width: 600px;
+    max-width: 100%;
+  }
+</style>
