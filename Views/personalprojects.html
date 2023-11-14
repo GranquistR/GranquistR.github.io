@@ -1,5 +1,10 @@
 <script>
-  //
+  $(".TinyBlocksLink").click(function () {
+    window.open("https://github.com/GranquistR/TinyBlocks");
+  });
+  $(".WebsiteLink").click(function () {
+    window.open("https://github.com/GranquistR/GranquistR.github.io");
+  });
 </script>
 
 <div class="personalProjects">
@@ -8,9 +13,17 @@
   </h2>
 
   <div class="flex">
-    <img src="Images/game1.png" width="50%" class="small" />
+    <img src="Images/game1.png" width="50%" class="display" />
     <div class="text">
-      <h4>Tiny Blocks</h4>
+      <h4>
+        Tiny Blocks
+        <img
+          src="/Icons/github-icon.png"
+          alt="Github Link"
+          width="30px"
+          class="icon link TinyBlocksLink"
+        />
+      </h4>
       Tiny Blocks is a game I made in Visual Studio using the C# windows form
       template. The game consists of a three-dimensional isometric grid of
       blocks where the player can create and destroy to their heart's desire.
@@ -23,9 +36,17 @@
   </div>
   <div class="lineSpacer"></div>
   <div class="flex">
-    <img src="Images/Website.png" width="50%" class="small" />
+    <img src="Images/Website.png" width="50%" class="display" />
     <div class="text">
-      <h4>This Website</h4>
+      <h4>
+        This Website
+        <img
+          src="/Icons/github-icon.png"
+          alt="Github Link"
+          width="30px"
+          class="icon link WebsiteLink"
+        />
+      </h4>
       My intent with this website, besides being an awesome portfolio, was to
       have it serve as a hub to all future personal projects. This would entail
       making the page as fast and expandable as possible. I achieved this by
@@ -39,6 +60,15 @@
   </div>
 </div>
 <style>
+  .personalProjects .link:hover {
+    background-color: #2c333c;
+    cursor: pointer;
+  }
+
+  .personalProjects .link {
+    border-radius: 20px;
+  }
+
   .personalProjects .lineSpacer {
     left: 10px;
     right: 10px;
@@ -51,7 +81,7 @@
     padding: 10px;
   }
 
-  .personalProjects img {
+  .personalProjects .display {
     border: 1px solid white;
     max-width: 416px;
     min-width: 360px;
