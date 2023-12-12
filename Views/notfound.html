@@ -1,7 +1,21 @@
+<script>
+  $(document).ready(function () {
+    $("#terces").on("click", function () {
+      $(".notfound code").text("404?");
+      $(".notfound .sub").text("A secret is revealed!");
+      $(".notfound .msg").text("Please contact me for your prize!");
+      //not valid after 10:00 am on 12/12/2023
+    });
+  });
+</script>
+
 <div class="notfound flex">
   <div class="left">
     <code>404</code>
-    <div class="sub">Page not found!</div>
+    <div class="sub">
+      Page not
+      <span id="terces">found!</span>
+    </div>
     <div class="msg">Please contact me if you think this is an error</div>
   </div>
   <span>
