@@ -1,15 +1,15 @@
 const markers = [
-  "YMCA Lifeguard",
-  "UW-Stout Helpdesk Technician",
   "Associate Software Developer",
+  "UW-Stout Helpdesk Technician",
+  "YMCA Lifeguard",
 ];
-const dates = ["2019-2021", "2022-2023", "2023-Present"];
+const dates = ["2023-Present", "2022-2023", "2019-2021"];
 const descriptions = [
-  "I worked as a lifeguard at the YMCA in Lino Lakes, MN. I was responsible for the safety of all patrons in the pool area. I also was resposible for pool cleaning, maintenance, and slide operation.",
-  "I worked as a helpdesk technician at the University of Wisconsin-Stout. I was responsible for assisting students, faculty, and staff with any technical issues they were having.",
   "I currently work as an associate software developer at Sentry Insurance. I am responsible for developing and maintaining software for business use.",
+  "I worked as a helpdesk technician at the University of Wisconsin-Stout. I was responsible for assisting students, faculty, and staff with any technical issues they were having.",
+  "I worked as a lifeguard at the YMCA in Lino Lakes, MN. I was responsible for the safety of all patrons in the pool area. I also was resposible for pool cleaning, maintenance, and slide operation.",
 ];
-const images = ["ymca.png", "stout.png", "sentry.jpg"];
+const images = ["sentry.jpg", "stout.png", "ymca.png"];
 const timelineLength = 900;
 
 window.addEventListener("resize", imageshow);
